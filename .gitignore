@@ -1,0 +1,3 @@
+# Mengabaikan file konfigurasi dan dependensi di folder server
+server/.env
+server/node_modules/
