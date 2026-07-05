@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARIDEV Studio Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="brand-icon">A</div>
+      <div class="brand-text">
+        <h1>ARIDEV Studio Chatbot</h1>
+        <p>Mimin Aridev siap menjawab pertanyaan tentang web, aplikasi, dan layanan digital perusahaan Anda.</p>
+      </div>
+    </header>
+
+    <div class="chat-layout">
+      <section class="chat-area">
+        <div class="chat-intro">
+          <p><strong>Mimin Aridev</strong> adalah asisten resmi ARIDEV yang akan memikirkan jawaban terbaik untuk kebutuhan bisnis Anda.</p>
+        </div>
+
+        <div id="chat-box" class="chat-box"></div>
+
+        <div class="toolbar">
+          <form id="chat-form" class="chat-form">
+            <input type="text" id="user-input" placeholder="Tulis pesan Anda..." autocomplete="off" required />
+            <button type="submit">Kirim</button>
+          </form>
+          <button id="new-chat-btn" type="button" class="secondary-button">New Chat</button>
+        </div>
+
+        <div class="chat-note">
+          <span>Terhubung ke server backend ARIDEV.</span>
+        </div>
+      </section>
+
+      <aside class="history-panel">
+        <div class="history-header">
+          <h2>Riwayat Chat</h2>
+          <p>Sesi chat sebelumnya akan muncul di sini.</p>
+        </div>
+        <ul id="session-history" class="session-history"></ul>
+        <div id="history-empty" class="history-empty">Belum ada riwayat. Klik New Chat untuk mulai.</div>
+      </aside>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
